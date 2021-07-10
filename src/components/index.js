@@ -15,7 +15,7 @@ import ProductList from "./ProductList";
 import Sort from "./Sort";
 import CartContent from "./CarContent";
 import PageHero from "./PageHero";
-import Carouser from "./Carouser";
+import LatestProducts from "./LatestProducts";
 import Category from "./Category";
 import Add from "./Add";
 import Categories from "./Categories";
@@ -38,7 +38,7 @@ export {
   Sort,
   CartContent,
   PageHero,
-  Carouser,
+  LatestProducts,
   Category,
   Add,
   Categories,

@@ -36,7 +36,9 @@ const Wrapper = styled.section`
   .img-container {
     display: none;
   }
-
+  h1 {
+    font-size: 30px;
+  }
   p {
     line-height: 2;
     max-width: 45em;

@@ -4,7 +4,7 @@ import {
   Hero,
   Services,
   Contact,
-  Carouser,
+  LatestProducts,
   Add,
   Categories,
 } from "../components";
@@ -24,7 +24,7 @@ const HomePage = () => {
       <Categories data={categories} breakPoints={breakPoints2} />
       <FeaturedProducts />
       <Services />
-      <Carouser
+      <LatestProducts
         data={latest}
         loading={loading}
         error={error}

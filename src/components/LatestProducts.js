@@ -14,9 +14,9 @@ export default function Slider({ data, loading, error, breakPoints }) {
     return <Error />;
   }
   return (
-    <div className="carousel">
-      <div className="carousel-wrapper">
-        <Wrapper className="section">
+    <Wrapper className="section">
+      <div className="carousel">
+        <div className="carousel-wrapper">
           <div className="title">
             <h2>latest products</h2>
             <div className="underline" />
@@ -28,9 +28,9 @@ export default function Slider({ data, loading, error, breakPoints }) {
               })}
             </Carousel>
           </div>
-        </Wrapper>
+        </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 
