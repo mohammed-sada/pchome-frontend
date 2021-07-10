@@ -61,7 +61,7 @@ const Wrapper = styled.article`
     height: 100%;
     display: block;
     border-radius: var(--radius);
-    object-fit: cover;
+    object-fit: contain;
   }
   h5 {
     font-size: 0.75rem;

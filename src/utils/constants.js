@@ -95,7 +95,7 @@ export const categories = [
     name: "memory & storage",
     value: "memory&storage",
     image:
-      "https://www.techadvisor.com/cmsdata/features/3605133/How_to_Harddrive_case_1_thumb800.jpg",
+      "https://4.imimg.com/data4/TE/BK/MY-5812789/external-hard-disk-500x500.jpg",
     subCat: [
       {
         name: "external hard drives",

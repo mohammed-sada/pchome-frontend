@@ -46,7 +46,7 @@ const Wrapper = styled.section`
   }
 
   .carousel-wrapper {
-    width: 97%;
+    width: 95%;
   }
   img {
     height: 200px;

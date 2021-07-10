@@ -42,8 +42,8 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 400px;
+    justify-content: flex-start;
+    height: auto;
   }
 
   .carousel-wrapper {
@@ -53,9 +53,16 @@ const Wrapper = styled.section`
     height: 100px;
   }
   a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
     background: none;
     margin-bottom: 1rem;
+    h5 {
+      margin-top: 1rem;
+    }
     h5,
     h6 {
       text-align: center;

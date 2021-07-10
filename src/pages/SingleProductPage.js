@@ -110,7 +110,7 @@ const Wrapper = styled.main`
 
   @media (min-width: 992px) {
     .product-center {
-      grid-template-columns: 30% 40% 30%;
+      grid-template-columns: 30% 35% 30%;
       align-items: center;
     }
     .price {

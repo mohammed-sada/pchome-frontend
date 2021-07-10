@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { CartContent, PageHero } from "../components";
 
 const CartPage = () => {
-  console.log(useCartContext());
   const { cart } = useCartContext();
   if (cart.length < 1)
     return (
