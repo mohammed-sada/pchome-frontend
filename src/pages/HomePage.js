@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   FeaturedProducts,
   Hero,
@@ -12,6 +14,9 @@ import { useProductsContext } from "../context/products_context";
 import { breakPoints1, breakPoints2, categories } from "../utils/constants";
 
 const HomePage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
   const {
     latest_products: latest,
     products_loading: loading,
@@ -19,18 +24,38 @@ const HomePage = () => {
   } = useProductsContext();
   return (
     <main>
-      <Hero />
-      <Add breakPoints={breakPoints1} />
-      <Categories data={categories} breakPoints={breakPoints2} />
-      <FeaturedProducts />
-      <Services />
-      <LatestProducts
-        data={latest}
-        loading={loading}
-        error={error}
-        breakPoints={breakPoints2}
-      />
-      <Contact />
+      <div data-aos="fade-up">
+        <Hero />
+      </div>
+
+      <div data-aos="fade-down">
+        <Add breakPoints={breakPoints1} />
+      </div>
+
+      <div data-aos="fade-right">
+        <Categories data={categories} breakPoints={breakPoints2} />
+      </div>
+
+      <div data-aos="zoom-in">
+        <FeaturedProducts />
+      </div>
+
+      <div data-aos="fade-up">
+        <Services />
+      </div>
+
+      <div data-aos="zoom-in">
+        <LatestProducts
+          data={latest}
+          loading={loading}
+          error={error}
+          breakPoints={breakPoints2}
+        />
+      </div>
+
+      <div data-aos="fade-up">
+        <Contact />
+      </div>
     </main>
   );
 };

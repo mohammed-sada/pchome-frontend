@@ -12,7 +12,7 @@ export default function Add({ breakPoints }) {
         <div className="carousel-wrapper">
           <Carousel
             enableAutoPlay
-            autoPlaySpeed={2000}
+            autoPlaySpeed={4000}
             breakPoints={breakPoints}
           >
             {images.map((image, idx) => {

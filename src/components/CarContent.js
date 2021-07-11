@@ -78,6 +78,7 @@ const Wrapper = styled.section`
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
+    text-align: center;
     padding: 0.25rem 0.5rem;
     background: var(--clr-primary-5);
     color: var(--clr-white);
@@ -85,9 +86,15 @@ const Wrapper = styled.section`
     letter-spacing: var(--spacing);
     font-weight: 400;
     cursor: pointer;
+
+    @media (max-width: 370px) {
+      letter-spacing: none;
+      font-size: 12px;
+    }
+  }
   }
   .clear-btn {
-    background: var(--clr-black);
+    background: var(--clr-red-dark);
   }
   form {
     margin-top: 3rem;
@@ -106,7 +113,7 @@ const Wrapper = styled.section`
       justify-content: center;
       align-items: center;
     }
-  }
+ 
   .form-input {
     font-size: 1rem;
     padding: 0.5rem 1rem;
