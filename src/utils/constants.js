@@ -209,6 +209,8 @@ export const breakPoints2 = [
   { width: 1200, itemsToShow: 4 },
 ];
 
+export const siteUrl = "https://pchome.netlify.app";
+
 export const STOCK = 10;
 
 export const products_url = "https://pc-home.herokuapp.com/products";

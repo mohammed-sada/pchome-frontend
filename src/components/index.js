@@ -20,6 +20,7 @@ import Category from "./Category";
 import Add from "./Add";
 import Categories from "./Categories";
 import RelatedProducts from "./RelatedProducts";
+import SEO from "./SEO";
 export {
   FeaturedProducts,
   Navbar,
@@ -43,4 +44,5 @@ export {
   Add,
   Categories,
   RelatedProducts,
+  SEO,
 };

@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { useCartContext } from "../context/cart_context";
 import { Link } from "react-router-dom";
-import { CartContent, PageHero } from "../components";
+import { CartContent, PageHero, SEO } from "../components";
 
 const CartPage = () => {
   const { cart } = useCartContext();
   if (cart.length < 1)
     return (
       <Wrapper className="page-100">
+        <SEO title="Cart" />
         <div className="empty">
           <h2>Your cart is empty.</h2>
           <Link to="/products" className="btn">
@@ -20,6 +21,7 @@ const CartPage = () => {
 
   return (
     <Wrapper>
+      <SEO title="Cart" />
       <PageHero title="cart" />
       <CartContent />
     </Wrapper>

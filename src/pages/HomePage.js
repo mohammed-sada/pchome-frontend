@@ -9,6 +9,7 @@ import {
   LatestProducts,
   Add,
   Categories,
+  SEO,
 } from "../components";
 import { useProductsContext } from "../context/products_context";
 import { breakPoints1, breakPoints2, categories } from "../utils/constants";
@@ -24,6 +25,7 @@ const HomePage = () => {
   } = useProductsContext();
   return (
     <main>
+      <SEO title="PC-Home" />
       <div data-aos="fade-up">
         <Hero />
       </div>

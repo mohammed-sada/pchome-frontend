@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { PageHero } from "../components";
+import { PageHero, SEO } from "../components";
 import aboutImg from "../assets/image2.png";
 
 const AboutPage = () => {
   return (
     <main>
+      <SEO title="About" />
+
       <PageHero title="about" />
       <Wrapper className="page section section-center">
         <img src={aboutImg} alt="nice desk" />

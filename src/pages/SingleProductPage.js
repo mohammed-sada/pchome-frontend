@@ -12,6 +12,7 @@ import {
   PageHero,
   AddToCart,
   RelatedProducts,
+  SEO,
 } from "../components";
 
 const SingleProductPage = () => {
@@ -49,6 +50,7 @@ const SingleProductPage = () => {
 
   return (
     <Wrapper>
+      <SEO title={name} description={desc && desc[0].name} />
       <PageHero title={name} product />
       <div className="section section-center page">
         <Link className="btn" to="/products">

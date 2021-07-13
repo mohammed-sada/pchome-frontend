@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { SEO } from "../components";
 const ErrorPage = () => {
   return (
     <Wrapper className="page-100">
+      <SEO title="Error" />
+
       <section>
         <h1>404</h1>
         <h3>نأسف هذه الصفحة غير موجودة</h3>

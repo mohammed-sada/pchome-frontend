@@ -87,7 +87,7 @@ const Wrapper = styled.section`
     font-weight: 400;
     cursor: pointer;
 
-    @media (max-width: 370px) {
+    @media (max-width: 400px) {
       letter-spacing: none;
       font-size: 12px;
     }
